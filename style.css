@@ -41,9 +41,13 @@ header {
 }
 a {
   text-decoration: none;
-  color: var(--primary-text);
 }
-a:hover {
+header a {
+  color: var(--primary-text);
+  font-size: 1rem;
+  font-weight: 400;
+}
+header a:hover {
   color: var(--secondary-hover);
 }
 .logo {
@@ -55,11 +59,12 @@ a:hover {
   height: 50px;
 }
 .navigation {
+  width: 80%;
   padding-bottom: 20px;
   border-bottom: 1px var(--primary-text) solid;
-  margin-right: 50px;
+  margin-right: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   gap: 15px;
 }
@@ -82,6 +87,17 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
+/* Bottom gradient */
+section::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: -100px;
+  height: 15%; /* Adjust this percentage to match the gradient length */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--primary-bg));
+}
 .hero .content {
   width: 600px;
   height: 500px;
@@ -103,7 +119,7 @@ a:hover {
   align-items: center;
   gap: 20px;
 }
-.hero-buttons button {
+.hero-buttons a {
   text-align: center;
   text-transform: uppercase;
   border-radius: 0.1875rem;
