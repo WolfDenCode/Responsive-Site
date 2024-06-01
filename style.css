@@ -46,7 +46,7 @@ a {
 }
 header a {
   color: var(--primary-text);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400;
 }
 header a:hover {
@@ -59,12 +59,13 @@ header a:hover {
   background-size: contain;
   width: 200px;
   height: 50px;
+  margin-left: 200px;
 }
 .navigation {
   width: 80%;
   padding-bottom: 20px;
   border-bottom: 1px var(--primary-text) solid;
-  margin-right: 80px;
+  margin-right: 250px;
   display: flex;
   justify-content: right;
   align-items: center;
