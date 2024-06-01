@@ -41,17 +41,21 @@ header {
   align-items: center;
   background-color: var(--primary-bg);
 }
+
 a {
   text-decoration: none;
 }
+
 header a {
   color: var(--primary-text);
   font-size: 1.1rem;
   font-weight: 400;
 }
+
 header a:hover {
   color: var(--secondary-hover);
 }
+
 .logo {
   background-image: url("image.svg");
   background-repeat: no-repeat;
@@ -61,6 +65,7 @@ header a:hover {
   height: 50px;
   margin-left: 200px;
 }
+
 .navigation {
   width: 80%;
   padding-bottom: 20px;
@@ -70,6 +75,64 @@ header a:hover {
   justify-content: right;
   align-items: center;
   gap: 15px;
+}
+
+.menu-toggle-checkbox {
+  display: none;
+}
+
+.menu-toggle-label {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.menu-toggle-label .bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--primary-text);
+  margin: 4px 0;
+  transition: 0.4s;
+  margin-right: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .navigation {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: var(--primary-bg);
+    border-bottom: none;
+    margin-right: 0;
+  }
+
+  .menu-toggle-checkbox:checked ~ .navigation {
+    display: flex;
+  }
+
+  .menu-toggle-label {
+    display: flex;
+  }
+
+  .logo {
+    margin-left: 10px;
+  }
+
+  .menu-toggle-checkbox:checked ~ .menu-toggle-label .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 10px);
+  }
+
+  .menu-toggle-checkbox:checked ~ .menu-toggle-label .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle-checkbox:checked ~ .menu-toggle-label .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -10px);
+  }
 }
 
 .hero {
@@ -163,6 +226,7 @@ section::after {
 .services h3 {
   margin: 0 10%;
   text-align: center;
+  margin-bottom: 40px;
 }
 .services .title {
   font-size: 3rem;
@@ -188,7 +252,7 @@ section::after {
   cursor: pointer;
   position: relative;
   color: var(--primary-text);
-  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  border: 5px solid rgb(223, 221, 221);
   margin: 20px 0;
   background-color: #000000;
 }
