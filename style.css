@@ -75,6 +75,8 @@ header a:hover {
   justify-content: right;
   align-items: center;
   gap: 15px;
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .menu-toggle-checkbox {
@@ -98,7 +100,7 @@ header a:hover {
 
 @media (max-width: 1000px) {
   .navigation {
-    display: none;
+    display: flex;
     flex-direction: column;
     width: 100%;
     position: absolute;
@@ -109,6 +111,8 @@ header a:hover {
     margin-right: 0;
     gap: 0;
     padding-bottom: 0;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
   }
   .nav-div {
     display: flex;
@@ -130,7 +134,7 @@ header a:hover {
   }
 
   .menu-toggle-checkbox:checked ~ .navigation {
-    display: flex;
+    max-height: 500px;
   }
 
   .menu-toggle-label {
