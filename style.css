@@ -551,7 +551,7 @@ footer .footer-nav {
 footer .copyright {
   height: 70%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   width: 100%;
@@ -562,4 +562,9 @@ footer .copyright {
 footer .copyright .logo {
   height: 100px;
   margin-left: 0;
+}
+@media (max-width: 800px) {
+  footer .copyright {
+    justify-content: center;
+  }
 }
