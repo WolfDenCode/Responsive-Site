@@ -85,7 +85,7 @@ header a:hover {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  margin-right: 20px;
+  margin-right: 3rem;
 }
 
 .menu-toggle-label .bar {
@@ -94,7 +94,6 @@ header a:hover {
   background-color: var(--primary-text);
   margin: 4px 0;
   transition: 0.4s;
-  margin-right: 2rem;
 }
 
 @media (max-width: 1000px) {
@@ -108,6 +107,26 @@ header a:hover {
     background-color: var(--primary-bg);
     border-bottom: none;
     margin-right: 0;
+    gap: 0;
+    padding-bottom: 0;
+  }
+  .nav-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    transition: background-color ease-in-out 0.3s;
+    padding: 15px 0;
+  }
+  header a {
+    width: 100%;
+  }
+  .nav-div:hover {
+    background-color: var(--secondary-bg);
+  }
+  header a:hover {
+    color: var(--secondary-text);
   }
 
   .menu-toggle-checkbox:checked ~ .navigation {
@@ -299,13 +318,13 @@ section::after {
 }
 .services .cards .card:hover h2 {
   inset: auto auto 270px 30px;
-  transition: inset 0.3s ease-out;
+  transition: inset 0.3s ease-in-out;
 }
 
 .services .cards .card:hover p,
 .services .cards .card:hover a {
   opacity: 1;
-  transition: opacity 0.5s 0.1s ease-in;
+  transition: opacity 0.5s ease-in;
 }
 
 .services .cards .card:hover img {
