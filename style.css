@@ -9,8 +9,8 @@
 
 :root {
   --primary-bg: #06202b;
-
   --secondary-bg: #a3d5d3;
+  --footer-bg: #0b3d50;
   --primary-text: #ffffff;
   --secondary-text: #000000;
   --primary-hover: #2a4853;
@@ -518,3 +518,48 @@ form {
   }
 }
 /* #endregion */
+
+footer {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--footer-bg);
+  color: var(--secondary-hover);
+  padding: 0 10%;
+  padding-top: 1rem;
+}
+footer .footer-nav {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.footer-nav a {
+  color: var(--secondary-hover);
+  font-size: 1.1rem;
+}
+.footer-nav a:hover {
+  color: var(--primary-text);
+}
+footer .copyright {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  border-top: var(--secondary-hover) 1px solid;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+}
+footer .copyright .logo {
+  height: 100px;
+  margin-left: 0;
+}
