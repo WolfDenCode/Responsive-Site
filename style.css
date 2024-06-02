@@ -1,9 +1,12 @@
+/* #region Basic Settings */
+
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --primary-bg: #06202b;
 
@@ -33,6 +36,9 @@ h1 {
   line-height: 1.1;
   text-transform: uppercase;
 }
+/*#endregion */
+
+/* #region Navbar Settings */
 
 header {
   width: 100%;
@@ -161,6 +167,9 @@ header a:hover {
     transform: rotate(45deg) translate(-5px, -10px);
   }
 }
+/* #endregion */
+
+/* #region Hero Section Settings */
 
 .hero {
   width: 100%;
@@ -214,7 +223,7 @@ section::after {
 .hero-buttons a {
   text-align: center;
   text-transform: uppercase;
-  border-radius: 0.1875rem;
+  border-radius: 0.2rem;
   padding: 1rem 3rem;
   font-size: 1rem;
   font-weight: 700;
@@ -294,6 +303,10 @@ section::after {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--primary-bg));
   }
 }
+/* #endregion */
+
+/* #region Services Settings */
+
 .services {
   display: flex;
   flex-direction: column;
@@ -392,3 +405,101 @@ section::after {
   transition: opacity 0.3s ease-in;
   opacity: 0.3;
 }
+/* #endregion */
+
+/* #region Contact Settings */
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 0 10%;
+  margin-bottom: 5rem;
+}
+
+.contact .base-info {
+  max-width: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.contact h2 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.contact p {
+  margin-bottom: 1rem;
+}
+.contact a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-text);
+  text-underline-offset: 5px;
+  text-decoration: underline;
+  color: var(--secondary-hover);
+}
+
+.contact a:hover {
+  color: coral;
+}
+.contact .icon {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  margin-left: 0;
+}
+
+.contact .contact-form {
+  max-width: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  width: 100%;
+}
+.contact-form input {
+  display: block;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  margin-right: 1rem;
+  border-radius: 0.2rem;
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 9rem;
+  outline: none;
+  border-radius: 0.2rem;
+  width: 100%;
+  padding: 10px;
+}
+.contact-form button {
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  color: var(--secondary-text);
+  background-color: var(--primary-text);
+  transition: background-color 0.2s ease-in-out;
+  width: 150px;
+  border-radius: 0.2rem;
+  margin-top: 1.5rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
+.contact-form button:hover {
+  background-color: var(--secondary-hover);
+}
+/* #endregion */
