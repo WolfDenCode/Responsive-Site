@@ -415,6 +415,7 @@ section::after {
   align-items: start;
   padding: 0 10%;
   margin-bottom: 5rem;
+  gap: 30px;
 }
 
 .contact .base-info {
@@ -501,5 +502,19 @@ form {
 
 .contact-form button:hover {
   background-color: var(--secondary-hover);
+}
+
+@media (max-width: 650px) {
+  .contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .base-info {
+    max-width: 100%;
+  }
+  .contact .contact-form {
+    max-width: 100%;
+  }
 }
 /* #endregion */
