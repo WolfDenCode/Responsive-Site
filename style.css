@@ -519,6 +519,8 @@ form {
 }
 /* #endregion */
 
+/* #region Footer Settings */
+
 footer {
   width: 100%;
   min-height: 200px;
@@ -568,3 +570,4 @@ footer .copyright .logo {
     justify-content: center;
   }
 }
+/* #endregion */
