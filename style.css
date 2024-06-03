@@ -190,10 +190,9 @@ header a:hover {
   background-size: cover;
 }
 /* Bottom gradient */
-section::after {
+.hero::after {
   content: "";
   position: absolute;
-
   left: 0;
   right: 0;
   bottom: 0;
@@ -292,7 +291,7 @@ section::after {
     margin: 0 5%;
   }
 
-  section::after {
+  .hero::after {
     content: "";
     position: absolute;
 
