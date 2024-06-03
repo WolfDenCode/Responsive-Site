@@ -17,7 +17,9 @@
   --secondary-hover: #b8e4f5;
   --secondary-hover-transparent: rgba(184, 228, 245, 0.5);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Noto Sans", sans-serif;
   background-color: var(--primary-bg);
@@ -65,7 +67,7 @@ header a:hover {
 }
 
 .logo {
-  background-image: url("logo.png");
+  background-image: url("./images/logo.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -184,7 +186,7 @@ header a:hover {
       rgba(0, 0, 0, 0) 0%,
       var(--primary-bg) 85%
     ),
-    url("hero.jpg");
+    url("./images/hero.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -256,7 +258,7 @@ header a:hover {
         rgba(0, 0, 0, 0) 0%,
         var(--primary-bg) 75%
       ),
-      url("hero.jpg");
+      url("./images/hero.jpg");
   }
 
   .hero .content {

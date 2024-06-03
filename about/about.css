@@ -18,7 +18,9 @@
   --secondary-hover: #b8e4f5;
   --secondary-hover-transparent: rgba(184, 228, 245, 0.5);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Noto Sans", sans-serif;
   background-color: var(--primary-bg);
@@ -65,7 +67,7 @@ header a:hover {
 }
 
 .logo {
-  background-image: url("logo.png");
+  background-image: url("../images/logo.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -246,7 +248,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  background-image: url("about.jpg");
+  background-image: url("../images/about.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -342,7 +344,7 @@ body {
       rgba(9, 50, 67, 0.77) 50%,
       rgba(9, 50, 67, 0.4)
     ),
-    url("testimonial.jpg");
+    url("../images/testimonial.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
