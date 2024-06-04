@@ -572,6 +572,8 @@ footer .copyright {
 }
 footer .copyright .logo {
   height: 100px;
+  position: static;
+  left: 0;
   margin-left: 0;
 }
 @media (max-width: 800px) {
